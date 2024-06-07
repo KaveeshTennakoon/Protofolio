@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Welcome!</h3>
+        <h1>Kaveesh Tennakoon</h1>
+        <h3>And I'm a <span id="element"></span></h3>
+        <p>
+          I am an enthusiastic undergraduate
+          student majoring in Computer Science. I am passionate about web
+          development and inspired by the vast potential of data science to
+          transform industries and improve lives.
+        </p>
+
+        <div class="social-media">
+          <a href="https://github.com/KaveeshTennakoon" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/kaveesh-tennakoon/" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+        </div>
+
+        <div class="btn-wrapper">
+          <a href="kaveeshtennakoon_cv.pdf" class="btn" target="_blank">Download CV</a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="images/profile.png" alt="profile image" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/aboutimg.png" alt="about profile image" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h2 style="margin-bottom: 1%;">Aspiring:</h2>
+        <h3>Web Developer | Data Scientist | ML Engineer</h3>
+        <p>
+          I am currently pursuing my Bachelor’s degree in Computer Science at
+          IIT awraded by University Of Westminster UK, where I have gained a solid foundation in
+          programming, algorithms, and software engineering. My coursework has
+          equipped me with the theoretical knowledge and practical skills
+          necessary to tackle complex technical challenges.
+        </p>
+        <a href="" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+
+      <h2 class="heading">My <span>skills</span></h2>
+
+      <div class="skills-container">
+        <div class="skills-box">
+          <i class='bx bxl-html5'></i>
+          <h3>Front End</h3>
+          <p>
+            HTML <br>
+            CSS <br>
+            JavaScript <br>
+            BootStrap <br>
+            ReactJS <br>
+          </p>
+        </div>
+
+        <div class="skills-box">
+          <i class='bx bx-data'></i>
+          <h3>Back End</h3>
+          <p>
+            Django <br>
+            SQL <br>
+            Java <br>
+            Python <br>
+            MySQL
+          </p>
+        </div>
+
+        <div class="skills-box">
+          <i class='bx bx-code-alt'></i>
+          <h3>Other</h3>
+          <p>
+            Git <br>
+            GitHub <br>
+            NumPy <br>
+            Tkinter <br>
+            VS Code
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="projects-container">
+
+        <div class="project-box">
+          <img src="images/movieimg.png" alt="project thumbnail">
+          <div class="project-layer">
+            <h4>Movie Recommendation</h4>
+            <p>A Django and machine learning web application that recommeds movies on user interest.</p>
+            <a href="https://github.com/KaveeshTennakoon/MovieRecommendation" class="btn" target="_blank"><i class='bx bx-link-external'></i> Open in GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <img src="images/_d5eb9555-c6a0-42a6-973a-0944b038ff8d.jpeg" alt="project thumbnail">
+          <div class="project-layer">
+            <h4>Todo List</h4>
+            <p>A Django-based to-do list web application.</p>
+            <a href="https://github.com/KaveeshTennakoon/Django-TodoList" class="btn" target="_blank"><i class='bx bx-link-external'></i> Open in GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <img src="images/_3dce1205-d8fd-464e-b89c-593924aa901b.jpeg" alt="project thumbnail">
+          <div class="project-layer">
+            <h4>Word Counter</h4>
+            <p>A Django app for counting words in text.</p>
+            <a href="https://github.com/KaveeshTennakoon/Django_WordCounter" class="btn" target="_blank"><i class='bx bx-link-external'></i> Open in GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email Address">
+          <input type="text" placeholder="Mobile Number">
+          <input type="text" placeholder="Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send" class="btn">
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2024 Kaveesh Tennakoon. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Aspiring Data Scientist', 'Open Source Contributor'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
+      });
+    </script>
+
+  </body>
+</html>
