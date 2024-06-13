@@ -156,7 +156,7 @@ span {
 }
 
 .about-img img {
-    height: 400px;
+    height: 35vw;
 }
 
 .heading {
@@ -219,6 +219,12 @@ span {
 
 .projects {
     background-color: var(--second-bg-color);
+    text-align: center;
+}
+  
+.projects .btn {
+    display: inline-block;
+    margin-top: 1rem;
 }
 
 .projects h2 {
@@ -428,4 +434,5 @@ footer {
     .contact form .input-box input {
         width: 100%;
     }
+
 }
