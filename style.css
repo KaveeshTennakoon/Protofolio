@@ -148,7 +148,7 @@ span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--second-bg-color);
+
 }
 
 .about-img {
@@ -217,8 +217,42 @@ span {
     transform: scale(1.02);
 }
 
+.freelance-container {
+    display: flex;
+    gap: 60px;
+    margin-top: 8rem;
+    align-items: stretch;
+}
+
+.thumbnail {
+    flex: 1;
+    display: flex;
+}
+
+.thumbnail img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
+
+.freelance-contain {
+    flex: 1;
+}
+
+.freelance-contain h4 {
+    font-size: 2.5rem;
+}
+
+.freelance-contain p {
+    font-size: 1.5rem;
+    margin: 10px 20px;
+    line-height: 20px;
+}
+
 .projects {
-    background-color: var(--second-bg-color);
+
     text-align: center;
 }
   
@@ -314,7 +348,7 @@ span {
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: .8rem;
     margin: .7rem 0 ;
 }
@@ -333,10 +367,13 @@ span {
 
 footer {
     padding: 2rem 9%;
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     font-size: 1.6rem;
 }
 
+section:nth-child(odd) {
+    background-color: var(--second-bg-color);
+}
 
 
 
@@ -355,6 +392,12 @@ footer {
 
     section {
         padding: 10rem 3% 2rem;
+    }
+
+    .freelance-container {
+        flex-direction: column;
+        margin-top: 4rem;
+        gap: 10px;
     }
 
     .footer {
@@ -413,7 +456,7 @@ footer {
     }
 
     .about img {
-        width: 40vw;
+        min-width: 20vw;
         margin-top: 4rem;
     }
 
@@ -433,6 +476,10 @@ footer {
 
     .contact form .input-box input {
         width: 100%;
+    }
+
+    .about-img img{
+        min-height: 200px;
     }
 
 }

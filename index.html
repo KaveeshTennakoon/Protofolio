@@ -20,6 +20,7 @@
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#freelance">Freelance</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -43,7 +44,7 @@
         </div>
 
         <div class="btn-wrapper">
-          <a href="kaveeshtennakoon_cv.pdf" class="btn" target="_blank">Download CV</a>
+          <a href="Kaveesh_CV.pdf" class="btn" target="_blank">Download CV</a>
         </div>
       </div>
       <div class="home-img">
@@ -93,10 +94,10 @@
           <h3>Back End</h3>
           <p>
             Django <br>
-            SQL <br>
             Java <br>
             Python <br>
-            MySQL
+            MySQL <br>
+            Strapi
           </p>
         </div>
 
@@ -110,6 +111,21 @@
             Tkinter <br>
             VS Code
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="freelance" id="freelance">
+      <h2 class="heading">Free<span>lance</span></h2>
+      <div class="freelance-container">
+        <div class="thumbnail">
+          <img src="images/vsmartfashion.png" alt="freelance image">
+        </div>
+        <div class="freelance-contain">
+          <h4>vsmartfashion.lk</h4>
+          <p><span>Role:</span> Full-Stack Developer</p>
+          <p><span>Description:</span> Developed and deployed a fully responsive e-commerce website for a clothing store. Implemented features such as product filtering, order tracking, and secure payment integration using ReactJS for the front end and Strapi for the backend. Utilized MySQL for the database and hosted the site on a VPS server with Nginx configuration for improved routing and performance.</p>
+          <p><span>Technologies:</span> ReactJS, Strapi, MySQL, Nginx, VPS hosting, Cloudinary</p>
         </div>
       </div>
     </section>
@@ -153,16 +169,21 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form action="#">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5aa280a3-ba26-4b52-b50a-7c3f458ad784">
+        
         <div class="input-box">
-          <input type="text" placeholder="Full Name">
-          <input type="email" placeholder="Email Address">
-          <input type="text" placeholder="Mobile Number">
-          <input type="text" placeholder="Subject">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone" placeholder="Mobile Number" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+
         <input type="submit" value="Send" class="btn">
-      </form>
+    </form>
+    
+    
     </section>
 
     <footer>

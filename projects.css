@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -67,6 +67,7 @@ body {
 
 .header .back-home {
     margin-left: auto;
+    font-size: 1.6rem;
 }
 
 section {
@@ -102,6 +103,8 @@ span {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    display: inline-block;
+    margin-top: 1rem;
 }
 
 .btn:hover {
@@ -112,37 +115,29 @@ span {
 .heading {
     text-align: center;
     font-size: 4.5rem;
+    margin-bottom: 2rem;
 }
 
 .projects, .contribution {
     background-color: var(--second-bg-color);
 }
 
-.projects .btn {
-    display: inline-block;
-    margin-top: 1rem;
-}
-
-.projects h2 {
-    margin-bottom: 4rem;
-}
-
-.projects-container {
+.projects-container, .contribution-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 2.5rem;
 }
 
 .project-box {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
+    width: calc(33.33% - 2rem);
     background-color: var(--second-bg-color);
-    margin-bottom: 100px;
+    margin-bottom: 2rem;
 }
 
 .project-box img {
-    width: 33.33%;
+    width: 100%;
     border-radius: 5%;
 }
 
@@ -151,33 +146,109 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 2rem;
-    width: 66.67%;
+    padding: 1.5rem;
 }
 
-.project-layer h3 {
-    font-size: 3rem;
-    color: var(--main-color);
-    margin-bottom: 1rem;
+.contribution {
+    padding: 10rem 9% 2rem;
 }
 
-.project-layer p {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
+h3 {
+    font-size: 2rem;
 }
 
-.project-layer a {
-    display: inline-block;
-    margin-top: 1rem;
-}
-
-.project-box:nth-child(even) {
-    flex-direction: row-reverse;
+p {
+    font-size: 1.3rem;
 }
 
 footer {
-    padding: 2rem 9%;
-    background-color: var(--bg-color);
-    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+@media (max-width: 1024px) {
+    .header .logo {
+        font-size: 2.2rem;
+    }
+
+    .header .nav-link {
+        font-size: 1.4rem;
+    }
+
+    .header .back-home {
+        font-size: 1.4rem;
+    }
+
+    .projects-container {
+        gap: 1.5rem;
+    }
+
+    .project-box {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .header .logo {
+        font-size: 1.8rem;
+    }
+
+    .header .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .header .back-home {
+        font-size: 1.2rem;
+        padding: 0.4rem 1.2rem;
+    }
+
+    .header .nav-links {
+        gap: 2rem;
+    }
+
+    .projects-container {
+        gap: 2rem;
+    }
+
+    .project-box {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+    }
+
+    section {
+        padding: 8rem 5% 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .logo {
+        display: none;
+    }
+
+    .header .nav-link {
+        font-size: 1rem;
+    }
+
+    .header .back-home {
+        font-size: 1rem;
+        padding: 0.3rem 1rem;
+    }
+
+    .projects .btn {
+        font-size: 1.4rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    section {
+        padding: 6rem 3% 2rem;
+    }
 }
